@@ -1,0 +1,43 @@
+<?php
+/**
+ * Magento Enterprise Edition
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Magento Enterprise Edition License
+ * that is bundled with this package in the file LICENSE_EE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.magentocommerce.com/license/enterprise-edition
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     default_default
+ * @copyright   Copyright (c) 2010 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://www.magentocommerce.com/license/enterprise-edition
+ */
+?>
+
+<!--generate data popup form -->
+<input type="text" style="width: 250px ! important;" class=" input-text" value="<?php echo  Mage::getStoreConfig(Newjueqi_Specialgiftcard_Model_Pool::REWARD_GIFTCARD_XML_CONFIG_CODE_EXPIRES_DATE);?>" name="groups[reward_giftcardaccount_general][fields][expires_date][value]" id="giftcard_reward_giftcardaccount_general_expires_date">           
+<img style="" title="Select Date" id="img_giftcard_reward_giftcardaccount_general_expires_date" class="v-middle" alt="" src="<?php echo Mage::getBaseUrl('skin');?>adminhtml/default/enterprise/images/grid-cal.gif"/>
+ <script type="text/javascript">
+//&lt;![CDATA[
+                Calendar.setup({
+                    inputField: "giftcard_reward_giftcardaccount_general_expires_date",
+                    //ifFormat: "%m/%e/%y",
+                    ifFormat: "%Y-%m-%d",
+                    showsTime: false,
+                    button: "img_giftcard_reward_giftcardaccount_general_expires_date",
+                    align: "Bl",
+                    singleClick : true
+                });
+            //]]&gt;
+            </script>           
